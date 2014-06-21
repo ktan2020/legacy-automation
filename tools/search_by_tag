@@ -1,0 +1,2 @@
+#!/bin/sh
+grep -l "@$1@" TC* | sed -e "s:.txt::gI" -e "s:.py::gI" -e "s:.xml::gI" | sort | uniq | xargs
