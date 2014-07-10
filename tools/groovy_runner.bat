@@ -60,8 +60,8 @@ if not "%RUNNERERRORS%" == "0" (
 	set ERRORSTATUS=1
 )
 
-echo. ### jrunner return code: [%ERRORSTATUS%] ###
+echo. ### runner return code: [%ERRORSTATUS%] ###
 
 :end
-rem del /F /Q %JRUNNER_OUT% 2>NUL
+rem del /F /Q %RUNNER_OUT% 2>NUL
 endlocal & exit /B %ERRORSTATUS%
